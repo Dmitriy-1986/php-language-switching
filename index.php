@@ -8,6 +8,7 @@ if($_SERVER['REQUEST_URI']) {
     $str = 'English: <br> Lorem ipsum dolor aset...';
     
     if(isset($_GET['lang'])) {
+        
         if ($_GET['lang'] == 'en') {
             $str = 'English: <br> Lorem ipsum dolor aset...';            
         } elseif($_GET['lang'] == 'uk') {
@@ -15,6 +16,8 @@ if($_SERVER['REQUEST_URI']) {
         } elseif($_GET['lang'] == 'ru') {
             $str = 'Русский: <br> Это текст рыба, не имеет смысловой нагрузки...';
         }
+        
     }
+    
     print $str;
 } 
